@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="icon" href="./src/img/ico.svg" type="img/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>Base Apparel</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="content">
+            <div class="logo">
+                <img src="./src/img/logo.svg" alt="Logo">
+            </div>
+            <div class="hero">
+                <img src="./src/img/hero-desktop.jpg" alt="Model">
+            </div>
+
+            <div class="hero__content">
+                <div class="form__content" id="form-content">
+                    <div>
+                        <h2 class="text">We're</h2>
+                        <h2 class="text__black">coming soon</h2>
+
+                        <p class="description">
+                            Hello fellow shoppers! We're currently building our new
+                            fashion store. Add your email below to stay up-to-date with
+                            announcements and our launch deals.
+                        </p>
+                    </div>
+
+                    <form id="formulario" class="input" novalidate>
+                        <input class="email__box" type="email" id="correo" name="correo" placeholder="Email Address"
+                            autocomplete="email" spellcheck="false" required>
+
+                        <img id="check" class="check" src="./src/img/check.png" alt="">
+
+                        <img id="error__img" class="img__error" src="./src/img/icon-error.svg" alt="">
+
+                        <button class="btn" id="btn" type="submit" aria-label="Enviar correo">
+                            <img src="./src/img/icon-arrow.svg" alt="">
+                        </button>
+                    </form>
+
+                    <p class="error__message" id="error-message" aria-live="polite"></p>
+                </div>
+
+
+                <div class="success__content" id="success-content" aria-live="polite" hidden>
+
+                    <div class="success__icon">
+                        <span></span>
+                    </div>
+
+                    <h2 class="text">Thank</h2>
+                    <h2 class="text__black">you!</h2>
+
+                    <p class="description">
+                        Your email has been validated successfully.
+                        Thanks for your interest in Base Apparel!
+                    </p>
+
+                    <button type="button" class="back__btn" id="back-btn">
+                        Back to home
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>
